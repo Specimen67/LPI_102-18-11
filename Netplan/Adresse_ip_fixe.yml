@@ -1,0 +1,12 @@
+network:
+  version:2
+  ethernet:
+    enp0s3:
+      addresses:
+      - 192.168.100.10 #Ipfixe
+      nameservers:
+        addresses:
+        - 8.8.8.8
+      routes:
+        - to: default
+          via: 192.168.100.1
