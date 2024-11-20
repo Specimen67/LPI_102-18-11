@@ -1,0 +1,4 @@
+zone "mondomaine.lan" {
+	type master;
+	file "/etc/bind/db.mondomaine.lan";
+};
