@@ -1,0 +1,24 @@
+Host lpi102
+  HostName 127.0.0.1
+  User menguerrand
+  Port 2222
+  IdentityFile C:\Users\Maxime\.ssh\id_ed25519
+
+Host lpi102_4
+  HostName 127.0.0.1
+  User menguerrand
+  Port 2224
+  IdentityFile C:\Users\Maxime\.ssh\id_ed25519
+
+Host lpi102_3
+  HostName 172.16.2.10
+  User menguerrand
+  #IdentityFile C:\Users\Maxime\.ssh\id_ed25519
+  ProxyJump lpi102_4
+
+Host lpi102_2
+  HostName 172.16.1.10
+  User menguerrand
+  Port 2222
+  #IdentityFile C:\Users\Maxime\.ssh\id_ed25519
+  ProxyJump lpi102
