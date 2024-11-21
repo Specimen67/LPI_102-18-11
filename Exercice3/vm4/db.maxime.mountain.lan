@@ -1,0 +1,16 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns.maxime.mountain.lan admin.maxime.mountain.lan. (
+	             2411201708		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+; enregistrement des noms
+@	IN	NS	ns.maxime.mountain.lan.
+ns  IN  A   172.16.2.1
+VM2  IN  A  172.16.2.10  
+site1 IN CNAME ns
+site2 IN CNAME ns

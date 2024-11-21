@@ -1,0 +1,12 @@
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp0s3:
+      addresses:
+      - 172.16.2.10/24
+      gateway4: 172.16.2.1
+      nameservers:
+        addresses:
+        - 172.16.2.1
+        search: [maxime.mountain.lan]
+  version: 2

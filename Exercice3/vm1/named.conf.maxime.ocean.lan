@@ -1,0 +1,4 @@
+zone "maxime.ocean.lan" {
+	type master;
+	file "/etc/bind/db.maxime.ocean.lan";
+};

@@ -1,0 +1,16 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns.maxime.ocean.lan. admin.maxime.ocean.lan. (
+	             2411201651		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+; enregistrement des noms
+@	IN	NS	ns.maxime.ocean.lan.
+ns  IN  A   172.16.1.1
+VM1  IN  A  172.16.1.10  
+site1 IN CNAME ns
+site2 IN CNAME ns

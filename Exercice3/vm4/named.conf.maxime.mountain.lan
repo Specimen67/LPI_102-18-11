@@ -1,0 +1,4 @@
+zone "maxime.mountain.lan" {
+	type master;
+	file "/etc/bind/db.maxime.mountain.lan";
+};
